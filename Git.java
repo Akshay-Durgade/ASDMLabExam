@@ -41,6 +41,27 @@ class Git
 					}
 				}
 			break;
+            case 3:
+			{
+				int num=372;
+				int originalnumber=num;
+				int remainder;
+				int result=0;
+				while(originalnumber!=0)
+				{
+					remainder=originalnumber%10;
+					result=result+(int)Math.pow(remainder, 3);
+					originalnumber=originalnumber/10;
+				}
+				if(result==num)
+				{
+					System.out.println("Armstrong");
+				}
+				else
+				{
+					System.out.println("Not an Armstrong");
+				}
+			}
 		}
     }
 }
